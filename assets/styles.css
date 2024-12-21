@@ -1,0 +1,135 @@
+/* CSS File */
+
+body {
+  font-family: 'Roboto', sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Container styling */
+.container {
+  display: flex;
+  height: 100vh;
+}
+
+/* Navigation Bar */
+.nav {
+  background-color: #4CAF50; /* Green */
+  color: white;
+  padding: 15px; 
+  flex: 0 0 350px;
+  display: flex;
+  flex-direction: column;
+  /* justify-content: space-between; */
+}
+
+.nav .start {
+  font-size: 24px;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.nav .input-place,
+.nav .date,
+.nav .buttons {
+  margin-bottom: 15px;
+}
+
+.nav .form {
+  display: flex;
+  gap: 5px;
+}
+
+.nav .buttons .stock-btn,
+.nav .buttons .indicators-btn,
+.nav .buttons .forecast-btn {
+  background-color: #FFC107; /* Yellow */
+  color: white;
+  border: none;
+  padding: 5px;
+  margin-right: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.nav .buttons .forecast-btn {
+  background-color: #FF5722; /* Red */
+}
+
+.nav .buttons .stock-btn:hover,
+.nav .buttons .indicators-btn:hover,
+.nav .buttons .forecast-btn:hover {
+  opacity: 0.9;
+}
+
+/* Main Content */
+.content {
+  flex: 1;
+  overflow-y: auto;
+  padding: 20px;
+  background-color: #FFF9C4; /* Light Yellow */
+}
+
+/* Graphs and Main Content Styling */
+#graphs-content,
+#main-content,
+#forecast-content {
+  margin-bottom: 20px;
+  background: white;
+  padding: 15px;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Description Section */
+.description_ticker {
+  background: #FFE082; /* Orange-Yellow */
+  padding: 15px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+/* Inputs and Date Picker Styling */
+#dropdown_tickers, 
+#n_days {
+  padding: 10px;
+  border: 1px solid #DDD;
+  border-radius: 5px;
+  width: 100%;
+}
+
+#submit {
+  background-color: #FF5722; /* Red */
+  color: white;
+  border: none;
+  padding: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+/* Logo Styling */
+#logo {
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 20px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .container {
+      flex-direction: column;
+  }
+
+  .nav {
+      height: auto;
+      flex: 0 0 auto;
+  }
+
+  .content {
+      height: auto;
+  }
+}
+
