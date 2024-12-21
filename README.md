@@ -87,3 +87,7 @@ Below is a screenshot of the web application:
    ```bash
    git clone https://github.com/your-repo/stock-visualization-dash.git
    cd stock-visualization-dash
+2. Create the environment: venv\Scripts\activate
+3. Install the necessary libraries from requirements.txt: pip install -r requirements.txt
+4. Run the web_app.py file: python web_app.py
+5. Click of the link saying "Dash is running on https://127**********/"
